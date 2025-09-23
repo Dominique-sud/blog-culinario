@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Lovers
+</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #FFF0F5;
+  color: white;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+header {
+  text-align: center;
+  background:  #D8BFD8;
+  color: white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.titulo{
+  font-size: 30px;
+}
+
+ ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 30px;
+  gap: 20px
+}
+
+a {
+  text-decoration: none;
+  color: #FFB6C1;
+
+}
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+article {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+
+img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+h3 {
+  text-align: center;
+  padding: 15px;
+}
+aside {
+  background: #FFC0CB;
+  border-left: 5px, solid, #FFB6C1;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background: #D8BFD8;
+  color: white;
+  border-radius: 15px;
+}
+h2{
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 24px;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    height: auto;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  article h3 {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  header p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  aside {
+    font-size: 15px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
+</style>
+<body>
+  <header>
+    <h1 class="titulo">Food Lovers</h1>
+    <p>En este blogs encontraras diferentes recetas quw podras realizar siguendo los pasos y con esto podras preparar unos platillos miy deliciosos para comer solo o en familia.</p>
+  </header>
+  <main>
+    <section>
+      <h2>Mis Recetas</h2>
+      <div class="grid">
+        <article>
+          <img src="enchiladas.jpeg" alt="">
+          <h3><a href="enchiladas.html">Enchiladas</a></h3>
+        </article>
+        <article>
+          <img src="spaguetti.jpeg" alt="">
+          <h3><a href="spaguetti.html">Spaguetti a la bolañesa</a></h3>
+        </article>
+        <article>
+          <img src="pay.jpeg" alt="">
+          <h3><a href="paylimon.html">Pay de limón</a></h3>
+        </article>
+      </div>
+    </section>
+    <aside>
+      <h2>Sobre mí</h2>
+      <p>Me llamo Dominique Estefanía Vilchis Allec tengo 18 años de edad donde actualmente estudio la preparatoria, esta página la creé especialmente para que las personas puedan realizar las diferentes recestas que se mostraran y asi poder deleitar esos deliciosos platillos con tu familia</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>2025 MIS RECETAS</p>
+    <br>
+    <p>DOMINIQUE ESTEFANÍA VILCHIS ALLEC</p>
+  </footer>
+</body>
+</html>
